@@ -1,3 +1,4 @@
+// adding all the things
 @import "variables";
 @import "mixins";
 
@@ -25,10 +26,15 @@ body {
   }
 }
 
+/* global header */
 header {
   background: $blue;
   color: $white;
   padding: 2em;
+
+  @media screen and (min-width: 768px) {
+    padding: 1em;
+  }
 
   .container {
     @include layout-center(20px, 10px);
@@ -39,12 +45,14 @@ header {
     }
 }
 
+/*! Keep this in compressed */
 .message {
-  background: $first-gray;
+  background: $gray;
   border: 1px solid $blue;
   padding: 20px;
 }
 .message-error {
   background: yellow;
+  border-color: darken($blue, 33%);
   @extend .message
 }

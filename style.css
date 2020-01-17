@@ -18,10 +18,16 @@ body a:hover {
   transition: all 0.5 ease-in-out;
 }
 
+/* global header */
 header {
   background: #21669c;
   color: #ffffff;
   padding: 2em;
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding: 1em;
+  }
 }
 header .container {
   margin: 20px auto 10px auto;
@@ -34,14 +40,16 @@ header nav ul {
   padding: 0;
 }
 
+/*! Keep this in compressed */
 .message, .message-error {
-  background: #eeeeee;
+  background: #dddddd;
   border: 1px solid #21669c;
   padding: 20px;
 }
 
 .message-error {
   background: yellow;
+  border-color: #040b11;
 }
 
 /*# sourceMappingURL=style.css.map */
