@@ -1,0 +1,50 @@
+@import "icc-variables";
+@import "icc-mixins";
+
+body {
+  background: $white;
+  color: $black;
+  font: {
+    size: 16px;
+    family: 'Open Sans', sans-serif;
+    weight: 400;
+  }
+  line-height: 1.2;
+
+  a {
+    border-bottom: 1px dotted;
+    color: $blue;
+    text-decoration: none;
+    transition: all 0.5 ease-in-out;
+
+    &:hover {
+      border-bottom-style: solid;
+      color: $black;
+      transition: all 0.5 ease-in-out;
+    }
+  }
+}
+
+header {
+  background: $blue;
+  color: $white;
+  padding: 2em;
+
+  .container {
+    @include layout-center(20px, 10px);
+  }
+
+    nav ul {
+      @include ul-nav;
+    }
+}
+
+.message {
+  background: $first-gray;
+  border: 1px solid $blue;
+  padding: 20px;
+}
+.message-error {
+  background: yellow;
+  @extend .message
+}

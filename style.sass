@@ -1,0 +1,46 @@
+@import variables
+
+@import mixins
+
+%message
+  background: $first-gray
+  border: 1px solid $white
+  +border-radius(5px)
+  padding: 20px
+.success
+  @extend %message
+  border-color: green
+.error
+  @extend %message
+  border-color: red
+
+body
+  background: $white
+  color: $black
+
+  a
+    color: $blue
+
+    &:hover
+      color: black
+
+  .card
+    background: $blue
+    border: 1px solid $white
+    +border-radius(15px)
+
+header
+  background: $blue
+  color: $white
+
+  a
+    color: $yellow
+
+  div
+    +layout-center
+    background: $white
+
+    div
+      background: $second-gray
+
+@import footer

@@ -1,0 +1,17 @@
+@mixin ul-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin border-radius($radius) {
+  -ms-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin layout-center($top, $bottom) {
+  margin: $top auto $bottom auto;
+  max-width: 1280px;
+  width: 100%;
+}
