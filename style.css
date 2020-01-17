@@ -1,67 +1,47 @@
-.error, .success {
-  background: #eeeeee;
-  border: 1px solid #ffffff;
-  -ms-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  padding: 20px;
-}
-
-.success {
-  border-color: green;
-}
-
-.error {
-  border-color: red;
-}
-
 body {
   background: #ffffff;
   color: #252627;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
 }
 body a {
+  border-bottom: 1px dotted;
   color: #21669c;
+  text-decoration: none;
+  transition: all 0.5 ease-in-out;
 }
 body a:hover {
-  color: black;
-}
-body .card {
-  background: #21669c;
-  border: 1px solid #ffffff;
-  -ms-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
+  border-bottom-style: solid;
+  color: #252627;
+  transition: all 0.5 ease-in-out;
 }
 
 header {
   background: #21669c;
   color: #ffffff;
+  padding: 2em;
 }
-header a {
-  color: #ffd657;
-}
-header div {
-  margin-left: auto;
-  margin-right: auto;
+header .container {
+  margin: 20px auto 10px auto;
   max-width: 1280px;
   width: 100%;
-  background: #ffffff;
 }
-header div div {
-  background: #dddddd;
-}
-
-footer {
-  background: #252627;
-  color: #eeeeee;
-}
-footer a {
-  color: #ffd657;
-}
-footer ul {
+header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.message, .message-error {
+  background: #eeeeee;
+  border: 1px solid #21669c;
+  padding: 20px;
+}
+
+.message-error {
+  background: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */
